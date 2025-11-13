@@ -1,4 +1,6 @@
 import React from "react";
+import logo from '../../assets/logo.svg';
+import Header from '../../components/header';
 
 const Hero = () => {
   const handleLogout = () => {
@@ -7,8 +9,7 @@ const Hero = () => {
   };
   return (
     <div>
-      home
-      <button onClick={handleLogout}>Logout</button>
+      
     </div>
   );
 };
