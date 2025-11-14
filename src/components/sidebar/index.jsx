@@ -84,9 +84,9 @@ const Sidebar = () => {
         ))}
       </div>
     </div>
-    <div className="block md:hidden fixed bottom-0 bg-[#212121] w-full text-white flex items-end justify-evenly">
+    <div className="block md:hidden fixed bottom-0 bg-[#212121] w-full text-white flex items-end justify-evenly z-999">
         {sidebarItems.slice(0, 4).map((item, index) => (
-          <Link to='javascript:void(0)' key={index} className="flex flex-col text-center px-[16px] items-center gap-[10px] py-[16px]">
+          <Link to='/' key={index} className="flex flex-col text-center px-[16px] items-center gap-[10px] py-[16px]">
             <img src={item.icon} alt="icon" />
             <span className='text-[14px]'>{item.name}</span>
           </Link>

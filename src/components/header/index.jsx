@@ -43,7 +43,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='border-t border-[#303030] flex items-center gap-[6px] px-[20px] absolute left-[242px] lg:left-[18.9%] bg-[#212121] w-full py-[6px] flex items-center'>
+            <div className='hidden md:flex border-t border-[#303030] items-center gap-[6px] px-[20px] absolute left-[242px] lg:left-[18.9%] bg-[#212121] w-full py-[6px] flex items-center'>
                 <button className='border-[0.3px] border-[#AAAAAA] py-[6px] px-[12px] rounded-full text-[14px] cursor-pointer bg-[#fff] text-[#030303]'>All</button>
                 <button className='border-[0.3px] border-[#AAAAAA] py-[6px] px-[12px] rounded-full text-[14px] cursor-pointer'>YouTube</button>
                 <button className='border-[0.3px] border-[#AAAAAA] py-[6px] px-[12px] rounded-full text-[14px] cursor-pointer'>Instagram</button>

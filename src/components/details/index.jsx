@@ -10,9 +10,9 @@ const Details = () => {
   if (!video) return <p className="text-white">Video topilmadi!</p>;
 
   return (
-    <div className="bg-[#000000] min-h-[100vh] w-full pl-[246px] lg:pl-[21.2%] pt-[105px] text-white">
+    <div className="bg-[#000000] min-h-[100vh] w-full md:pl-[246px] lg:pl-[21.2%] pt-[105px] text-white px-[16px] xl:px-0">
       <img src={detailsImg} alt="img" className="w-full" />
-      <div className="flex items-center justify-between bg-[#181818] px-[65px] py-[22px]">
+      <div className="flex items-center justify-between bg-[#181818] px-[20px] md:px-[65px] py-[22px]">
         <div className="flex items-center gap-[10px]">
           <img src={video.avatar} alt="avatar" className="w-[80px] rounded-full" />
           <div>
