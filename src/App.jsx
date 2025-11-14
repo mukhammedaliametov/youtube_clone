@@ -5,6 +5,7 @@ import Hero from "./pages/hero";
 import PrivateRoute from "./components/private-route";
 import Register from "./pages/register";
 import MainLayout from "./layouts/main";
+import Details from "./components/details";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="/" element={<MainLayout />}>
         <Route path="/" element={<PrivateRoute />}>
           <Route index element={<Hero />}></Route>
+          <Route path="/video/:id" element={<Details />}></Route>
         </Route>
       </Route>
       <Route path="/login" element={<Login />}></Route>
@@ -19,7 +21,7 @@ const App = () => {
       <Route
         path="/*"
         element={
-          <div className="flex justify-center items-center bg-[#212121]">
+          <div className="flex justify-center items-center bg-[#212121] h-screen text-white">
             404 | Not Found
           </div>
         }

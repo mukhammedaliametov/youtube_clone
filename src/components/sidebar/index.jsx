@@ -45,10 +45,10 @@ const Sidebar = () => {
   ];
   return (
     <>
-    <div className="hidden md:block bg-[#212121] fixed min-w-[242px] w-[20%] text-white mt-[60px] overflow-y-scroll h-screen pb-[60px]">
+    <div className="hidden md:block bg-[#212121] fixed min-w-[242px] w-[20%] text-white mt-[65px] overflow-y-scroll h-screen pb-[60px]">
       <div className="mb-[3px]">
         {sidebarItems.slice(0, 3).map((item, index) => (
-          <Link to='javascript:void(0)' key={index} className="flex items-center gap-[20px] px-[25px] py-[12px] first:bg-[#303030] cursor-pointer hover:bg-[#303030]">
+          <Link to='/' key={index} className="flex items-center gap-[20px] px-[25px] py-[12px] first:bg-[#303030] cursor-pointer hover:bg-[#303030]">
             <img src={item.icon} alt="icon" />
             <span className='text-[14px]'>{item.name}</span>
           </Link>
